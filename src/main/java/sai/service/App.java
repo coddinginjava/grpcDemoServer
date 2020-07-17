@@ -7,9 +7,11 @@ import java.io.IOException;
 
 public class App {
     public static void main(String[] args) throws InterruptedException, IOException {
-        Server server = ServerBuilder.forPort(9000).build();
+        Server server = ServerBuilder.forPort(9000).addService(new GreetServiceImpl()).build();
 
         server.start();
+
+        System.out.println("server started at : "+ server.getPort());
 
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             System.out.println("Shutdown request received");
