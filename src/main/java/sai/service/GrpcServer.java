@@ -10,6 +10,7 @@ public class GrpcServer {
         Server server = ServerBuilder.forPort(9000)
                                      .addService(new GreetServiceImpl())
                                      .addService(new AdditionServiceImpl())
+                                     .addService(new PrimeDecoImpl())
                                      .build();
 
         server.start();

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "proto.prime";
+
+message Request {
+    int32 N = 1;
+}
+
+message  Response {
+    int32 result = 1;
+}
+
+service PrimeNumberDecomposition {
+    rpc getAll(Request) returns (stream Response);
+}
