@@ -5,7 +5,7 @@ import io.grpc.ServerBuilder;
 
 import java.io.IOException;
 
-public class App {
+public class GrpcServer {
     public static void main(String[] args) throws InterruptedException, IOException {
         Server server = ServerBuilder.forPort(9000)
                                      .addService(new GreetServiceImpl())
