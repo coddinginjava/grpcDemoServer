@@ -1886,11 +1886,12 @@ public final class Greeting {
       "\021\n\tfirstName\030\001 \001(\t\022\020\n\010lastName\030\002 \001(\t\"6\n\014" +
       "GreetRequest\022&\n\tgreetings\030\001 \001(\0132\023.great." +
       "GreetingName\"\037\n\rGreetResponse\022\016\n\006result\030" +
-      "\001 \001(\t2\205\001\n\014GreetService\0224\n\005greet\022\023.great." +
+      "\001 \001(\t2\301\001\n\014GreetService\0224\n\005greet\022\023.great." +
       "GreetRequest\032\024.great.GreetResponse\"\000\022?\n\016" +
       "greetManyTimes\022\023.great.GreetRequest\032\024.gr" +
-      "eat.GreetResponse\"\0000\001B\r\n\013proto.greetb\006pr" +
-      "oto3"
+      "eat.GreetResponse\"\0000\001\022:\n\tlongGreet\022\023.gre" +
+      "at.GreetRequest\032\024.great.GreetResponse\"\000(" +
+      "\001B\r\n\013proto.greetb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
