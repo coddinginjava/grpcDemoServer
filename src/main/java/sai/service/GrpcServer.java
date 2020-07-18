@@ -11,6 +11,7 @@ public class GrpcServer {
                                      .addService(new GreetServiceImpl())
                                      .addService(new AdditionServiceImpl())
                                      .addService(new PrimeDecoImpl())
+                                     .addService(new CalculatorServiceImpl())
                                      .build();
 
         server.start();

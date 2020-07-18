@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option  java_package = "proto.cal";
+
+message Request{
+    int32  numbers = 1;
+}
+
+message Response {
+    float  avg = 1;
+}
+
+service  Calculator {
+    rpc getAverage(stream Request) returns (Response) {};
+}
